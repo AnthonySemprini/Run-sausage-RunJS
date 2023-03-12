@@ -4,23 +4,21 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-
-body{
+body {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     background-color: #18f;
     flex-direction: column;
-
 }
-section{
+section {
     background-color: #fff;
     padding: 20px;
     border-radius: 6px;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 50px rgba(0,0,0,0.1);
 }
-.jeu{
+.jeu {
     width: 500px;
     height: 200px;
     border: 1px solid #000;
@@ -28,67 +26,80 @@ section{
     border: 0;
     border-bottom: 1px solid #18f;
 }
+
 .perso{
- width: 20px;
- height: 50px;
-position: relative;
-top: 150px;
-}
-.animation{
-    animation: perso-saut 500ms infinite;
+    width: 20px;
+    height: 50px;
+    position: relative;
+    top: 150px;
+   
+    
 }
 
+.animation {
+    animation:  perso-saut 500ms infinite;
+}
 
-/********* animation perso saute ******************/
-@keyframes  perso-saut{
+/*Animation personnage saute*/
+@keyframes   perso-saut {
     0%{
         top: 130px;
     }
-    25%{
+    25% {
         top: 80px;
     }
-    50%{
+    50% {
         top: 80px;
     }
-    100%{
+    100% {
         top: 130px;
     }
 }
-.perso img{
+
+
+
+.perso img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.obstacle{
+
+.obstacles {
     width: 20px;
     height: 20px;
     background-color: #333;
     position: relative;
-    top: 130px;
+    top:130px;
     left: 480px;
     border-radius: 50%;
-    animation: animation-obstacles 2.5s infinite ;
+    animation: anime-obstacles 2.5s infinite ;
+    
 }
 
-/********** anition obstacle *************************/
+/*animation obstacles*/
 
-@keyframes animation-obstacles {
+@keyframes anime-obstacles {
     0%{
-        left:480px;
+        left: 480px;
     }
-    100%{
+    100% {
         left: -40px;
     }
+
 }
-.control{
+
+
+
+.control {
     margin-top: 20px;
     text-align: center;
 }
-a, button{
+
+a,button {
     padding: 10px 50px;
     border-radius: 4px;
     border: 0;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 50px rgba(0,0,0,0.1);
     font-weight: bold;
     cursor: pointer;
     background-color: #fff;
