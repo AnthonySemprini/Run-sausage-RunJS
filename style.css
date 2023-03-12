@@ -33,7 +33,9 @@ section{
  height: 50px;
 position: relative;
 top: 150px;
-animation: perso-saut 500ms infinite;
+}
+.animation{
+    animation: perso-saut 500ms infinite;
 }
 
 
@@ -65,8 +67,19 @@ animation: perso-saut 500ms infinite;
     top: 130px;
     left: 480px;
     border-radius: 50%;
+    animation: animation-obstacles 2.5s infinite ;
 }
 
+/********** anition obstacle *************************/
+
+@keyframes animation-obstacles {
+    0%{
+        left:480px;
+    }
+    100%{
+        left: -40px;
+    }
+}
 .control{
     margin-top: 20px;
     text-align: center;
