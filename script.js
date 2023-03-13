@@ -9,7 +9,7 @@ function sauter(){
     // function pour faire sauter le personnage
     if(perso.classList != "animation"){
         perso.classList.add('animation'); 
-        score++;
+        score+=100;
         document.getElementById("resultat").innerHTML = score;
     }
     setTimeout(function(){
@@ -24,10 +24,10 @@ var verification = setInterval(function(){
     var persoTop = parseInt(window.getComputedStyle(perso).getPropertyValue("top")) ;
     var obstaclesLeft = parseInt(window.getComputedStyle(obstacles).getPropertyValue("left")) ;
 
-    if(obstaclesLeft<15 && obstaclesLeft >10 && persoTop>= 205){
+    if(obstaclesLeft<25 && obstaclesLeft >10 && persoTop>= 205){
         obstacles.style.animation = "none";
-        alert("Vous avez grillé!!!")
-    }else{
+        document.getElementById("perdu").innerHTML = "game over";
+    
     }
 
 },1)
