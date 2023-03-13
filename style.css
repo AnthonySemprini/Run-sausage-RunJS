@@ -60,27 +60,20 @@ section {
 }
 
 .animation {
-    animation:  perso-saut 1.6s infinite ease-in-out;
+    animation:  perso-saut 1.5s infinite ease-in-out;
 }
 
 /*Animation personnage saute*/
 @keyframes   perso-saut {
-    0%{
-        top: 205px;
-      
-    }
-    25% {
-        top: 100px;
-        left: 40px;
-    }
-    50% {
-        top: 100px;
-        left: 40px;
-    }
-    100% {
-        top: 205px;
-        
-    }
+    0% {top: 205px;}
+    10% {top: 150px;}
+    20% {top: 100px;}
+    35% {top: 75px;} 
+    50% {top: 50px;}
+    65% {top: 75px;}
+    80% {top: 100px;}
+    90% {top: 150px;}
+    100% {top: 205px;}
 }
 
 
