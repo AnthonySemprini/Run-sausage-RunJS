@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +8,45 @@
     <title>Jeu Javascript</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <section>
-        <div class="jeu">
-            <div class="perso">
-                <img src="media/img.png" alt="">
+    <div id="container">
+        <h1>SAUSAGE JUMP!!!</h1>
+        <section>
+            <div class="jeu">
+                <div class="perso">
+                    <img src="media/saucisse.png" alt="">
+                </div>
+                <div class="obstacles">
+                    <img src="media/fire.png" alt="">
+                </div>
             </div>
-            <div class="obstacles"></div>
+        </section>
+
+        <div class="control">
+            <button onclick="sauter()">SAUTER</button>
+            <a href="index.html">START</a>
         </div>
-    </section>
 
-    <div class="control">
-        <button onclick="sauter()">SAUTER</button>
-        <a href="index.html">START</a>
+        <div class="score">
+            <div class="cookChef">
+                <img src="media/penguin.png" alt="">
+            </div>
+            <h2>Score : </h2>
+            <p></p>
+            <!--<script>
+                var button = document.getElementById("clickMe"),
+                count = 0;
+              button.onclick = function() {
+                count += 1;
+                button.innerHTML = "Click me: " + count;
+              };
+               
+            </script>-->
+        </div>
+
     </div>
-
     <script src="script.js"></script>
 </body>
+
 </html>

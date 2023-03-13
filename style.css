@@ -1,26 +1,49 @@
+@font-face {
+    font-family: 'Alpha-Sausage';
+    src:url('Alpha-Sausage.ttf.woff') format('woff'),
+        url('Alpha-Sausage.ttf.svg#Alpha-Sausage') format('svg'),
+        url('Alpha-Sausage.ttf.eot'),
+        url('Alpha-Sausage.ttf.eot?#iefix') format('embedded-opentype'); 
+        font-weight: normal;
+        font-style: normal;
+}
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap');
 *{
     margin: 0;
     padding: 0;
+
     font-family: 'Poppins', sans-serif;
 }
-body {
+#container {
+    height: 100vh;
+    background-color: #18f;
+}
+H1{
+    text-align: center;
+    font-family: 'Alpha-Sausage';
+    font-size: 80px;
+    margin-bottom: 100px;
+    padding-top: 100px;
+}
+h2{
+    text-align: right;
+    font-family: 'Alpha-Sausage';
+    font-size: 40px;
+    
+}
+section {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background-color: #18f;
     flex-direction: column;
-}
-section {
     background-color: #fff;
     padding: 20px;
     border-radius: 6px;
     box-shadow: 0 0 50px rgba(0,0,0,0.1);
 }
 .jeu {
-    width: 500px;
-    height: 200px;
+    width: 1500px;
+    height: 300px;
     border: 1px solid #000;
     overflow: hidden;
     border: 0;
@@ -28,31 +51,35 @@ section {
 }
 
 .perso{
-    width: 20px;
-    height: 50px;
+    width: 90px;
+    height: 100px;
     position: relative;
-    top: 150px;
+    top: 205px;
    
     
 }
 
 .animation {
-    animation:  perso-saut 500ms infinite;
+    animation:  perso-saut 1.6s infinite ease-in-out;
 }
 
 /*Animation personnage saute*/
 @keyframes   perso-saut {
     0%{
-        top: 130px;
+        top: 205px;
+      
     }
     25% {
-        top: 80px;
+        top: 100px;
+        left: 40px;
     }
     50% {
-        top: 80px;
+        top: 100px;
+        left: 40px;
     }
     100% {
-        top: 130px;
+        top: 205px;
+        
     }
 }
 
@@ -65,31 +92,31 @@ section {
 }
 
 .obstacles {
-    width: 20px;
-    height: 20px;
-    background-color: #333;
+    width: 50px;
+    height: 80px;
     position: relative;
     top:130px;
-    left: 480px;
-    border-radius: 50%;
-    animation: anime-obstacles 2.5s infinite ;
+    left: 1450px;
+    animation: anime-obstacles 5s infinite ease-in-out;
     
-}
-
+    }
+    .obstacles img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
 /*animation obstacles*/
 
 @keyframes anime-obstacles {
     0%{
-        left: 480px;
+        left: 1480px;
     }
     100% {
         left: -40px;
     }
 
 }
-
-
-
 .control {
     margin-top: 20px;
     text-align: center;
@@ -106,4 +133,14 @@ a,button {
     font-size: 15px;
     text-decoration: 0;
     color: #000;
+}
+.cookChef{
+    display: flex;
+    justify-content: flex-end;
+}
+.score{
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-left: 40px;
 }

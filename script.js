@@ -17,9 +17,9 @@ var verification = setInterval(function(){
     var persoTop = parseInt(window.getComputedStyle(perso).getPropertyValue("top")) ;
     var obstaclesLeft = parseInt(window.getComputedStyle(obstacles).getPropertyValue("left")) ;
 
-    if(obstaclesLeft<20 && obstaclesLeft >0 && persoTop>= 130){
+    if(obstaclesLeft<15 && obstaclesLeft >10 && persoTop>= 205){
         obstacles.style.animation = "none";
-        alert("Vous avez perdu")
+        alert("Vous avez grillé!!!")
 
     }
 
