@@ -30,5 +30,5 @@ Ce jeu a été conçu pour être simple mais captivant. L'objectif était de cr�
 ## 📫 Contact
 Pour toute question ou suggestion, n'hésitez pas à me contacter. semprini.anthony@gmail.com
 
-
+Try => https://run-sausage.netlify.app/
 <img src="runSausage.png">
